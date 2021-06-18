@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" 
+            href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" 
+            integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" 
+            crossorigin="anonymous">
+    <link rel="stylesheet" 
+            href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" 
+            integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" 
+            crossorigin="anonymous">
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.5.0/css/ol.css" type="text/css">
+
+   <link rel="stylesheet" href="style.css">
+   <link rel="manifest" href="manifest.json">
+   <script src="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.5.0/build/ol.js"></script>
+</head>
+
+<body>
+    <div class="nav-side-menu">
+          <nav class="navbar navbar-expand-md navbar-light">
+            <div class="container"> 
+              <button class="navbar navbar-brand bg-light display-4 font-weight-bold font-italic " href="#" type="button">Karlsruhe Tour App</button>
+              <button class="navbar-toggler bg-light" data-toggle="collapse" data-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav bg-light">
+                  <li class="nav-item dropdown bg-success">
+                    <a href="#" class="nav-link dropdown-toggle text-center" data-toggle="dropdown">Food and Drinks</a>
+                    <div class="dropdown-menu bg-secondary">
+                      <button class="dropdown-item bg-light mt-1 text-center" href="#", type="button" value="bar">bar</button>
+                      <button class="dropdown-item bg-light mt-1 text-center" href="#", type="button" value="cafe">cafe</button>
+                      <button class="dropdown-item bg-light mt-1 text-center" href="#", type="button" value="restaurant">restaurant</button>
+                    </div>
+                  </li>
+                  <li class="nav-item dropdown bg-success">
+                    <a href="#" class="nav-link dropdown-toggle text-center" data-toggle="dropdown">Accomodations</a>
+                    <div class="dropdown-menu bg-secondary">
+                      <button class="dropdown-item bg-light mt-1 text-center" href="#", type="button" value="hostel">hostel</button>
+                      <button class="dropdown-item bg-light mt-1 text-center" href="#", type="button" value="hotel">hotel</button>
+                      <button class="dropdown-item bg-light mt-1 text-center" href="#", type="button" value="taxi">taxi</button>
+                    </div>
+                  </li>
+                  <li class="nav-item dropdown bg-success">
+                    <a href="#" class="nav-link dropdown-toggle text-center" data-toggle="dropdown">Entertainment</a>
+                    <div class="dropdown-menu bg-secondary">
+                      <button class="dropdown-item bg-light mt-1 text-center" href="#", type="button" value="cinema">cinema</button>
+                      <button class="dropdown-item bg-light mt-1 text-center" href="#", type="button" value="theatre">theatre</button>
+                      <button class="dropdown-item bg-light mt-1 text-center" href="#", type="button" value="museum">museum</button>
+                    </div>
+                  </li>
+                  <li class="nav-item dropdown bg-success">
+                    <a href="#" class="nav-link dropdown-toggle text-center" data-toggle="dropdown">Picnic Locations</a>
+                    <div class="dropdown-menu bg-secondary">
+                        <button class="dropdown-item bg-light mt-1 text-center" href="#", type="button" value="zoo">zoo</button>
+                        <button class="dropdown-item bg-light mt-1 text-center" href="#", type="button" value="park">park</button>
+                        <button class="dropdown-item bg-light mt-1 text-center" href="#", type="button" value="camp">campsite</button>
+                        <button class="dropdown-item bg-light mt-1 text-center" href="#", type="button" value="nightclub">nightclub</button>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+    </div>    
+    
+  <div id="map" class="map"></div>
+
+  <!-- overlayContainer -->
+  <div class="overlay-container">
+    <div class="overlay-text" id="feature-name"></div>
+    <div class="overlay-text" id="feature-additionalinfo"></div>
+  </div>
+  <div id="info">&nbsp;</div>
+    
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" 
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" 
+    crossorigin="anonymous">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" 
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" 
+    crossorigin="anonymous">
+  </script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" 
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" 
+    crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.polyfill.io/v2/polyfill.min.js?features=requestAnimationFrame,Element.prototype.classList"></script>
+  <script src="main.js"></script>
+  <script src="app.js"></script>
+    
+</body>
+</html>
+
